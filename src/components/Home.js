@@ -1,6 +1,7 @@
 import React from 'react'
 import {useSelector} from 'react-redux';
 import Login from './author/Login';
+import Dashboard from '../Dashboard';
 const Home = () => {
    const {author, isAuthenticated } = useSelector(state =>(
      state.isAuthenticated,
@@ -8,7 +9,7 @@ const Home = () => {
    ))
     return (
         <div>
-           {isAuthenticated ? <h1>Welcome {author}</h1> : <Login />}   
+           {isAuthenticated ? <Dashboard author={author}/> : <Login />}   
         </div>
     )
 }
