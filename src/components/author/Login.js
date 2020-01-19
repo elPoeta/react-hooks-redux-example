@@ -23,7 +23,7 @@ const Login = () => {
         <div>
            <form onSubmit={handlerSubmit}>
             <input type="text" placeholder="type your name" value={name}  onChange={e => setName(e.target.value)} required/>
-            <input type="submit" value="Login"/> 
+            <input type="submit" value="Fake Login"/> 
            </form> 
         </div>
     )
