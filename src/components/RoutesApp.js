@@ -12,7 +12,7 @@ const RoutesApp = () => {
               <Route exact path="/" component={Home} /> 
               <Route path="/recipes" component={Recipes} /> 
               <Route path="/createrecipe" component={RecipeForm} /> 
-              <Route path="/login" component={Login} /> 
+              <Route path="/login" render={props => <Login {...props}/>} /> 
               <Route component={NotFound}/>
           </Switch>
     )

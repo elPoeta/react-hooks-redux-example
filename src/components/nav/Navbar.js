@@ -5,8 +5,7 @@ const Navbar = () => {
     const links = [
         {id:1, path:"/", title:"Home"},
         {id:2, path:"/recipes", title:"Recipes"},
-        {id:3, path:"/createrecipe", title:"Create"},
-        {id:4, path:"/login", title:"Fake Login"},
+        {id:3, path:"/createrecipe", title:"Create"}
     ]
     return (
         <nav className="NavBar-menu">
