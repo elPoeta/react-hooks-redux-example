@@ -1,1 +1,4 @@
 export const LOGIN_AUTHOR = 'LOGIN_AUTHOR';
+export const ADD_RECIPE = 'ADD_RECIPE';
+export const GET_RECIPES = 'GET_RECIPES';
+export const REMOVE_RECIPE = 'REMOVE_RECIPE';

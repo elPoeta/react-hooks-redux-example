@@ -1,0 +1,121 @@
+.Recipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Recipe-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #ccc;
+    margin: 1em;
+    border-radius: .2em;
+    padding: 1em;
+}
+.Recipe-card a:nth-child(5),
+.Recipe-card button {
+    width: 80%;
+    justify-self: center;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Recipe-card button {
+    background-color: #6b0909;
+    border: 2px solid #6b0909;
+    padding: .2em;
+    outline: none;
+    color: #fff;
+}
+
+.Recipe-card a:nth-child(4) {
+    text-decoration: none;
+    border: 2px solid green;
+    color: green;
+    font-size: .9em;
+}
+
+.Recipe-card a:nth-child(4):hover {
+    color: #fff;
+    background-color: green;
+    transition: background-color 2s ease-out;
+}
+
+.Recipe-card button:nth-child(5):hover {
+    background-color: #fff;
+    color: #6b0909;
+    transition: background-color 2s ease-out;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: "title" "text" "misc";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    width: 400px;
+    margin: 2em auto;
+  }
+  .card-title {
+    grid-area: title;
+    align-self: end;
+  }
+  
+  .card-ingredient {
+    grid-area: text;
+    margin: 25px;
+  }
+  .card-ingredient p {
+    color: #222;
+    font-size:15px;
+    font-weight: 300;
+  }
+  .card-title h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  .card-misc {
+    grid-area: misc; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #81d7ec;
+  }
+  .card-misc .misc {
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #222;
+  }
+
+  .card-misc .value{
+    font-size:1.3em;
+    font-weight: 500;
+  }
+  .card-misc .type{
+    font-size:1.3em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  
+ 
